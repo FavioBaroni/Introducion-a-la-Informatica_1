@@ -1,0 +1,54 @@
+Lo que se ve a continuación es el proceso de creación del primer reposirotio local.
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop
+$ pwd
+/c/Users/Usuario/Desktop
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop
+$ mkdir 1er-Directorio-github
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop
+$ cd 1er-Directorio-github
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github
+$ git init
+Initialized empty Git repository in C:/Users/Usuario/Desktop/1er-Directorio-gith
+ub/.git/
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ ls -a
+./  ../  .git/
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ git config user.name "FavioBaroni"
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ git config user.email "faviobaroni@gmail.com"
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ git remote add origin https://github.com/FavioBaroni/Introducion-a-la-Informatica_1.git
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ git remote -v
+origin  https://github.com/FavioBaroni/Introducion-a-la-Informatica_1.git (fetch
+)
+origin  https://github.com/FavioBaroni/Introducion-a-la-Informatica_1.git (push)
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ touch 123_probando.txt
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ ls -a
+./  ../  .git/  123_probando.txt
+
+Usuario@DESKTOP-55MDRRA MINGW64 ~/Desktop/1er-Directorio-github (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        123_probando.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
